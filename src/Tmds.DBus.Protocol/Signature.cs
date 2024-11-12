@@ -1,8 +1,8 @@
 namespace Tmds.DBus.Protocol;
 
-public struct Signature
+public readonly struct Signature
 {
-    private byte[]? _value;
+    private readonly byte[]? _value;
 
     internal byte[] Data => _value ?? Array.Empty<byte>();
 
